@@ -1,0 +1,12 @@
+POST /webmaster/api.svc/pox/SubmitUrlBatch?apikey=sampleapikeyedecc1ea4ae341cc8b6 HTTP/1.1
+Content-Type: application/xml; charset=utf-8
+Host: ssl.bing.com
+
+
+<SubmitUrlBatch xmlns="http://schemas.datacontract.org/2004/07/Microsoft.Bing.Webmaster.Api">
+	<siteUrl>https://www.mmjshuttles.co.za/</siteUrl>
+<urlList>
+<string xmlns="http://schemas.microsoft.com/2003/10/Serialization/Arrays">https://www.mmjshuttles.co.za/url1</string>
+<string xmlns="http://schemas.microsoft.com/2003/10/Serialization/Arrays">https://www.mmjshuttles.co.za/url2</string>
+</urlList>
+</SubmitUrlBatch>

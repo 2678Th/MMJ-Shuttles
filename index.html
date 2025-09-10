@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home | MMJ Shuttle Services</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Fast, Safe and Reliable Shuttle Services">
+    <meta name="keywords" content="shuttle, transport, bus, travel, transportation">
+    <meta name="robots" content="index, follow">
+    <meta name="google-site-verification" content="mmjshuttles.co.za" />
+    <link rel="canonical" href="https://www.mmjshuttles.co.za/" />
+    <link rel="icon" href="/images/MMJ_Shuttle_Services_Logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+    <script>
+    document.getElementById("whatsapp-booking").addEventListener("click", function () {
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const pickup = document.getElementById("pickup").value;
+      const dropoff = document.getElementById("dropoff").value;
+  
+      // Check if all required fields are filled
+      if (!name || !email || !pickup || !dropoff) {
+        alert("Please fill in all fields before booking.");
+        return;
+      }
+  
+      const message = `Hi MMJ Shuttles! My name is ${name}. I'd like to book a ride from ${pickup} to ${dropoff}. You can reach me at ${email}.`;
+      
+      // Format number: 27 + rest (no 0 at the start)
+      const phoneNumber = "27659706971";
+      const whatsappURL = `https://wa.me/${27659706971}?text=${encodeURIComponent(message)}`;
+      document.getElementById("whatsapp-link").setAttribute("href", whatsappURL);
+  
+      window.open(whatsappURL, "_blank");
+    });
+  </script>
+<body>
+    
+    <header>
+        <nav>
+            <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Fast. Reliable. Affordable Shuttle Services</h1>
+            <p>Your trusted partner for all transportation needs.</p>
+            <a href="#booking" class="cta-button">Book Now</a>
+        </div>
+    </section>
+
+    <section id="services">
+        
+        <h2>Our Services</h2>
+        <div class="service-card">
+            <h3>Daily Commutes</h3>
+            <p>Reliable daily transportation for work or school.</p>
+        </div>
+        <div class="service-card">
+            <h3>Airport Transfers</h3>
+            <p>Quick and safe airport shuttle services.</p>
+        </div>
+        <div class="service-card">
+            <h3>Private Bookings</h3>
+            <p>Customized shuttle services for groups or events.</p>
+        </div>
+    </section>
+
+    <section id="booking">
+        <h2>Book Your Shuttle</h2>
+<form id="bookingForm">
+  <input type="text" id="name" placeholder="Full Name" required>
+  <input type="email" id="email" placeholder="Email Address" required>
+  <input type="text" id="pickup" placeholder="Pickup Location" required>
+  <input type="text" id="dropoff" placeholder="Dropoff Location" required>
+  
+  <!-- WhatsApp link that will submit the form data -->
+  <a href="#" id="whatsapp-link" class="cta-button" target="_blank">Book Now</a>
+</form>
+
+<script>
+// When the form is submitted, this script will generate the WhatsApp message
+document.getElementById("whatsapp-link").addEventListener("click", function(event) {
+  event.preventDefault();  // Prevent the default action of the link
+
+  // Get form data
+  const name = document.getElementById("name").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const pickup = document.getElementById("pickup").value.trim();
+  const dropoff = document.getElementById("dropoff").value.trim();
+
+  // Check if all required fields are filled
+  if (!name || !email || !pickup || !dropoff) {
+    alert("Please fill in all fields before booking.");
+    return;
+  }
+
+  // Create the WhatsApp message with the form data
+  const message = `Hi MMJ Shuttles! My name is ${name}. I'd like to book a ride from ${pickup} to ${dropoff}. You can reach me at ${email}.`;
+
+  // Your WhatsApp number (replace this with the actual number)
+  const phoneNumber = "27659706971";  // <-- Fill in the WhatsApp number
+
+  // Generate the WhatsApp URL
+  const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
+  // Dynamically update the <a> tag's href attribute
+  document.getElementById("whatsapp-link").setAttribute("href", whatsappURL);
+
+  // Open the WhatsApp link in a new tab
+  window.open(whatsappURL, "_blank");
+});
+</script>
+
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 MMJ Shuttles Service | All Rights Reserved</p>
+            <p>Follow us on:
+                <a href="#">Facebook</a> | <a href="#">Instagram</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

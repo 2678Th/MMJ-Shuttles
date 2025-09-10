@@ -1,0 +1,4 @@
+[System.ServiceModel.FaultContract(typeof(Microsoft.Bing.Webmaster.Api.Interfaces.ApiFault))]
+[System.ServiceModel.OperationContract]
+[System.ServiceModel.Web.WebInvoke(BodyStyle=System.ServiceModel.Web.WebMessageBodyStyle.WrappedRequest, Method="POST")]
+public void SubmitUrlBatch (string siteUrl, List<string> urlList);

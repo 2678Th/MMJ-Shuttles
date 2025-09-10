@@ -1,0 +1,278 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* green background */
+    color: #fff;
+  }
+  
+  /* Navigation */
+  nav {
+    background-color: #386324;
+    padding: 15px;
+    margin: 0 15px;
+    width: 100%
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 15px;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Hero Section */
+  #hero {
+    position: relative;
+    height: 600px;
+    background: 
+      linear-gradient(to bottom,rgba(0, 0, 0, 0.6) 0%,
+      rgba(46, 125, 50, 1) 120%
+      ),
+      url('images/Gstaad+Limousine+Service+by+Taxi+Simon+Mercedes-Benz+V+class+exteriour.jpg') no-repeat center top;
+    background-size: cover;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+  }
+  
+  .hero-content {
+    z-index: 2;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #e0f2f1;
+  }
+  
+  .cta-button {
+    background-color: #548d3e;
+    border: none;
+    padding: 10px 20px;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #ffffff;
+    cursor: pointer;
+  }
+  .whatsapp-booking {
+    background-color: #548d3e;
+    border: none;
+    padding: 10px 20px;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  .whatsapp-booking:hover {
+    background-color: #ffffff;
+    cursor: pointer;
+  }
+  /* Services Section */
+  #services {
+    padding: 40px 20px;
+    background-color: #ffffff;
+    text-align: center;
+  }
+  
+  .service-card {
+    background-color: #ffffff;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 500px;
+    border-radius: 10px;
+    color: rgb(67, 131, 77);
+  }
+  
+  /* Booking Section */
+  #booking {
+    padding: 40px 20px;
+    background-color: #2e7d32;
+    text-align: center;
+  }
+  
+  form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  input, button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #1b5e20;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+ /* Services Section */
+/* Services Section */
+#services {
+    padding: 60px 20px;
+    background-color: #388e3c;
+    text-align: center;
+  }
+  
+  .services-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 40px auto 0;
+  }
+  
+  .service-card.landscape {
+    display: flex;
+    align-items: center;
+    background-color: #2e7d32;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    transition: transform 0.3s;
+  }
+  
+  .service-card.landscape:hover {
+    transform: scale(1.02);
+  }
+  
+  .service-card.landscape img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    background-color: #1b5e20;
+    padding: 20px;
+  }
+  
+  .service-text {
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .service-text h3 {
+    margin: 0 0 10px;
+    font-size: 1.5rem;
+  }
+  
+  .service-text p {
+    margin: 0;
+    font-size: 1rem;
+  }
+  
+  /* Responsive */
+  @media screen and (max-width: 768px) {
+    .services-container {
+      flex-direction: column;
+    }
+  
+    .service-card.landscape {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .service-text {
+      padding: 15px;
+    }
+  }
+  
+  
+  /* Booking Section */
+  #booking {
+    padding: 50px 20px;
+    background-color: #43a047;
+  }
+  
+  form {
+    max-width: 500px;
+    margin: auto;
+  }
+  
+  form label {
+    display: block;
+    margin: 10px 0 5px;
+  }
+  
+  form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: none;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #357924;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+  }
+  
+  footer a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Shared Page Sections (About/Contact) */
+  .page-section {
+    padding: 50px 20px;
+    max-width: 800px;
+    margin: auto;
+    color: #fff;
+    background-color: #2e7d32;
+    text-align: center;
+  }
+  
+  .page-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .page-section li {
+    margin: 10px 0;
+    font-size: 1.1rem;
+  }
