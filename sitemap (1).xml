@@ -13,25 +13,26 @@
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://mmjshuttles.co.za/index.html</loc>
+  <loc>https://mmjshuttles.co.za/Home/index.html</loc>
   <lastmod>2025-09-11T08:57:17+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://mmjshuttles.co.za/about.html</loc>
+  <loc>https://mmjshuttles.co.za/About/about.html</loc>
   <lastmod>2025-09-11T08:57:17+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://mmjshuttles.co.za/contact.html</loc>
+  <loc>https://mmjshuttles.co.za/Contact/contact.html</loc>
   <lastmod>2025-09-11T08:57:17+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://mmjshuttles.co.za/schedule.html</loc>
+  <loc>https://mmjshuttles.co.za/Schedule/schedule.html</loc>
   <lastmod>2025-09-11T08:57:17+00:00</lastmod>
   <priority>0.64</priority>
 </url>
+
 
 
 </urlset>
